@@ -119,6 +119,15 @@ for(let i=1;i<li_list.length;i++){
     li_list[i].classList.add("color-item");*/
   
 }
+for(let i=1;i<li_list.length;i++){
+
+    li_list[i+2].classList.add("color-item--odd");
+  
+   /* li_list[i].classList.add("color-item--odd");
+
+    li_list[i].classList.add("color-item");*/
+  
+}
 
 console.log(li_list)
 
