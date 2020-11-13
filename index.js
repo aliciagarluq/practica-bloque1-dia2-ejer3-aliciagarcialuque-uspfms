@@ -110,16 +110,15 @@ for(let i=1;i<li_list.length;i++){
   li_list[i].append(b_child4);
 
 }
-for(let i=1;i<li_list.length;i++){
+ li_list[1].classList.add("color-item");
+ li_list[2].classList.add("color-item--odd");
+ li_list[3].classList.add("color-item");
+ li_list[4].classList.add("color-item--odd");
+ li_list[5].classList.add("color-item");
+ li_list[6].classList.add("color-item--odd");
+ li_list[7].classList.add("color-item");
+ li_list[8].classList.add("color-item--odd");
 
-    li_list[i].classList.add("color-item");
-  
-   /* li_list[i].classList.add("color-item--odd");
 
-    li_list[i].classList.add("color-item");*/
-  
-}
-
-
-console.log(li_list)
+console.log(li_list[1].classList)
 
