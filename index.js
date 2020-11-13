@@ -73,13 +73,13 @@ let li_list=document.querySelectorAll("li");
 
 //el contenido a cada li 
 for(let i=1;i<li_list.length;i++){
+
   //creamos el div 1 
   let d_child1=document.createElement("div");
   //texto del div
   let t_child1=document.createTextNode("color: "+ colorList[i - 1].colorName);
   d_child1.appendChild(t_child1);
   d_child1.classList.add("color-name");
-
 
   //creamos el div 2
   let d_child2=document.createElement("div")
@@ -111,11 +111,13 @@ for(let i=1;i<li_list.length;i++){
 
 }
 for(let i=1;i<li_list.length;i++){
-  if(i%2==0){
-    li_list[i].classList.add("color-item--odd");
-  }else{
+
     li_list[i].classList.add("color-item");
-  }
+  
+   /* li_list[i].classList.add("color-item--odd");
+
+    li_list[i].classList.add("color-item");*/
+  
 }
 
 console.log(li_list)
