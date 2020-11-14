@@ -115,21 +115,28 @@ for(let i=1;i<li_list.length;i++){
   li_list[i].append(b_child4);
 
 }
- li_list[1].classList.add("color-item");
+  for(let i=0;i<li_list.length;i+2){
+     li_list[i].classList.add("color-item--odd");
+  }
+/* li_list[1].classList.add("color-item");
  li_list[2].classList.add("color-item--odd");
  li_list[3].classList.add("color-item");
  li_list[4].classList.add("color-item--odd");
  li_list[5].classList.add("color-item");
  li_list[6].classList.add("color-item--odd");
  li_list[7].classList.add("color-item");
- li_list[8].classList.add("color-item--odd");
-
+ li_list[8].classList.add("color-item--odd");*/
 
 console.log(li_list[1].classList)
 
-  
+
+
+
+
+
 let b_colorShow = document.querySelectorAll("div.color-show");
-b_colorShow[0].style.backgroundColor=colorList[0].hex;
-b_colorShow[1].style.backgroundColor=colorList[1].hex;
-b_colorShow[2].style.backgroundColor=colorList[2].hex;
+  for(let i=0;i<b_colorShow.length;i++){
+    b_colorShow[i].style.backgroundColor=colorList[i].hex;
+  }
+
 console.log(b_colorShow[0])
