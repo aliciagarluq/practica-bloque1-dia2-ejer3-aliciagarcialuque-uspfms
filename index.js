@@ -113,9 +113,7 @@ for(let i=1;i<li_list.length;i++){
   li_list[i].append(d_child2);
   li_list[i].append(b_child3);
   li_list[i].append(b_child4);
-  let b_colorShow = document.querySelectorAll("div.color-show");
-  /*b_child3.classList.add(colorList[i -1].hex);*/
-  console.log("ey"+b_colorShow)
+
 }
  li_list[1].classList.add("color-item");
  li_list[2].classList.add("color-item--odd");
@@ -129,3 +127,6 @@ for(let i=1;i<li_list.length;i++){
 
 console.log(li_list[1].classList)
 
+  
+  let b_colorShow = document.querySelectorAll("div.color-show");
+console.log(b_colorShow)
