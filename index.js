@@ -95,10 +95,10 @@ for(let i=1;i<li_list.length;i++){
   let t_child3=document.createTextNode("Next item color");
   b_child3.appendChild(t_child3);
   b_child3.classList.add("color-set");
-  let atr=document.createAttribute("color",colorList[i -1].hex)
+  /*let atr=document.createAttribute("color",colorList[i -1].hex)
 
   b_child3.classList.add(colorList[i -1].hex);
-  console.log(b_child3)
+  console.log(b_child3)*/
  
 
 
@@ -113,7 +113,9 @@ for(let i=1;i<li_list.length;i++){
   li_list[i].append(d_child2);
   li_list[i].append(b_child3);
   li_list[i].append(b_child4);
-
+  let b_colorShow = document.querySelectorAll("div.color-show");
+  /*b_child3.classList.add(colorList[i -1].hex);*/
+  console.log("ey"+b_colorShow)
 }
  li_list[1].classList.add("color-item");
  li_list[2].classList.add("color-item--odd");
